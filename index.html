@@ -1,0 +1,154 @@
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { FaWhatsapp } from "react-icons/fa";
+
+export default function SkylandLandingPage() {
+  return (
+    <div className="bg-white text-gray-900 font-sans">
+
+      {/* FLOATING WHATSAPP */}
+      <a href="https://wa.me/2348027842350" className="fixed bottom-5 right-5 bg-green-500 p-4 rounded-full shadow-xl z-50">
+        <FaWhatsapp size={26} className="text-white" />
+      </a>
+
+      {/* NAV */}
+      <nav className="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto border-b">
+        <div className="flex items-center gap-3">
+          <img src="/mnt/data/ChatGPT Image Apr 15, 2026, 10_37_44 PM.png" className="w-10 h-10" />
+          <div className="leading-tight">
+            <p className="font-bold">Skyland Educonsult</p>
+            <p className="text-xs text-gray-500">International</p>
+          </div>
+        </div>
+        <a href="https://wa.me/2348027842350">
+          <Button className="bg-[#0A2540] text-white rounded-lg px-5">Apply Now</Button>
+        </a>
+      </nav>
+
+      {/* HERO */}
+      <section className="text-center px-6 py-20 max-w-4xl mx-auto">
+        <h1 className="text-4xl md:text-5xl font-bold leading-tight text-[#0A2540]">
+          Skip 2–5 Years of Delay<br/>Start Studying Abroad Fast
+        </h1>
+
+        <p className="mt-6 text-lg text-gray-600 max-w-2xl mx-auto">
+          No JAMB. No strikes. Get admission into international universities in months.
+        </p>
+
+        <div className="mt-8 flex justify-center gap-4 flex-wrap">
+          <a href="https://wa.me/2348027842350">
+            <Button className="bg-green-500 text-white px-8 py-5 rounded-lg flex items-center gap-2">
+              <FaWhatsapp /> Apply on WhatsApp
+            </Button>
+          </a>
+
+          <Button className="border border-gray-300 px-8 py-5 rounded-lg text-gray-700">
+            Check If You Qualify
+          </Button>
+        </div>
+      </section>
+
+      {/* TRUST BAR */}
+      <section className="bg-gray-50 py-6 text-center text-sm text-gray-600">
+        ✔ 2,500+ Students Placed • ✔ 98% Visa Success • ✔ Trusted Across Nigeria
+      </section>
+
+      {/* OFFER STACK */}
+      <section className="py-20 px-6 text-center max-w-5xl mx-auto">
+        <h2 className="text-3xl font-bold text-[#0A2540]">Get Up To 70% Scholarship Abroad</h2>
+
+        <div className="grid md:grid-cols-2 gap-6 mt-10">
+          {[
+            "70% Tuition Grant",
+            "Free Consultation",
+            "Admission Processing Support",
+            "Relocation Guidance"
+          ].map((item,i)=>(
+            <Card key={i} className="border rounded-xl">
+              <CardContent className="p-6 font-medium">{item}</CardContent>
+            </Card>
+          ))}
+        </div>
+      </section>
+
+      {/* COUNTRY */}
+      <section className="text-center py-10">
+        <p className="text-gray-600">Study In:</p>
+        <div className="flex justify-center gap-8 mt-4 text-lg font-medium">
+          <span>🇧🇯 Benin Republic</span>
+          <span>🇫🇷 France</span>
+          <span>🇩🇪 Germany</span>
+        </div>
+      </section>
+
+      {/* PROOF */}
+      <section className="py-20 px-6 bg-gray-50">
+        <h2 className="text-3xl font-bold text-center text-[#0A2540]">Proof That This Works</h2>
+
+        <div className="grid md:grid-cols-3 gap-6 mt-12 max-w-6xl mx-auto">
+          <Card className="border">
+            <CardContent className="p-4">
+              <img src="https://via.placeholder.com/300x200" className="rounded-lg" />
+              <p className="mt-3 text-sm text-gray-600">Admission letter proof</p>
+            </CardContent>
+          </Card>
+
+          <Card className="border">
+            <CardContent className="p-4">
+              <img src="https://via.placeholder.com/300x200" className="rounded-lg" />
+              <p className="mt-3 text-sm text-gray-600">WhatsApp success chat</p>
+            </CardContent>
+          </Card>
+
+          <Card className="border">
+            <CardContent className="p-4">
+              <img src="https://via.placeholder.com/300x200" className="rounded-lg" />
+              <p className="mt-3 text-sm text-gray-600">Visa approval proof</p>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      {/* FINAL CTA */}
+      <section className="py-20 px-6 text-center bg-[#0A2540] text-white">
+        <h2 className="text-3xl font-bold">Check If You Qualify in 60 Seconds</h2>
+        <p className="mt-4 text-gray-300">Limited slots available</p>
+
+        <a href="https://wa.me/2348027842350">
+          <Button className="mt-8 px-10 py-6 bg-green-500 text-white rounded-lg flex items-center gap-2 mx-auto">
+            <FaWhatsapp /> Apply Now
+          </Button>
+        </a>
+      </section>
+
+      {/* FOOTER */}
+      <footer className="text-center py-10 text-gray-500 border-t">
+        <p className="font-semibold text-[#0A2540]">Skyland Educonsult International</p>
+        <p className="mt-2">skylandedu20@gmail.com</p>
+
+        {/* SOCIAL LINKS */}
+        <div className="flex justify-center gap-6 mt-6">
+          <a
+            href="https://www.facebook.com/share/1DcyAY9WKo/"
+            target="_blank"
+            className="px-4 py-2 border rounded-lg hover:bg-gray-100"
+          >
+            Facebook
+          </a>
+          <a
+            href="https://www.instagram.com/skylandedu20"
+            target="_blank"
+            className="px-4 py-2 border rounded-lg hover:bg-gray-100"
+          >
+            Instagram
+          </a>
+        </div>
+
+        <p className="mt-6 text-xs text-gray-400">
+          © {new Date().getFullYear()} Skyland Educonsult International. All rights reserved.
+        </p>
+      </footer>
+
+    </div>
+  );
+}
